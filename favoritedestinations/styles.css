@@ -1,0 +1,658 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* #region header pic */
+
+.headerpic{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url(img/wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+
+
+.qoute blockquote{
+    font-size: 2rem;
+}
+
+.fancybg{
+    background-color: rgb(60, 59, 61, .5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 5rem;
+    position: absolute;
+    width: 100%;
+    top:30vh;
+}
+
+.qoute{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 25vh;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+/* #endregion */
+
+
+/* #region Navbar */
+
+nav{
+    background-color: rgb(60, 59, 61);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 100%;
+    list-style: none;
+    padding: 1% 0%;
+    color: white;
+    font-size: 130%;
+    text-align: center;
+}
+
+nav p{
+    color: rgb(184, 181, 181);
+    max-width: 8vw; 
+    text-align: right;
+    position: relative;
+    bottom: 2.5vh;
+    font-weight: bold;
+}
+
+nav ul li {
+    flex: 1;
+    
+}
+
+nav ul li:first-child{
+    position: relative;
+    justify-content: flex-start;
+    font-size: 1.3rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    padding: 6% 0% 6% 0%;
+    
+}
+
+nav ul li a:hover{
+    color: rgb(136, 136, 136);
+}
+
+nav ul li h1 span{
+    color:rgb(184, 181, 181);
+}
+
+/* #endregion navbar */
+
+/* #region footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color:rgb(60, 59, 61) ;
+    color: white;
+    border-top: 1px solid white;
+    overflow: hidden;
+}
+
+.about p {
+    margin: 0 5% 0 5%;
+    font-size: 120%;
+}
+
+.about h3 {
+    font-size: 150%;
+}
+
+.about h3 span{
+    color: rgb(255, 168, 7)
+}
+
+footer div {
+    flex: 1;
+    padding: 1% 0 1% 0;
+}
+
+.socialmedia{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.socialmedia h3 {
+    font-size: 150%;
+}
+
+.socialmedia a {
+    font-size: 250%;
+    position: relative;
+    top: 20%;
+    margin: 0 4%;
+    color: white;
+}
+
+#fb:hover{
+    color: rgb(0, 103, 221);
+}
+
+#tw:hover{
+    color: rgb(28, 217, 241);
+}
+
+#yt:hover{
+    color: rgb(214, 1, 1);
+}
+
+#ig:hover{
+    color: rgb(235, 86, 210);
+}
+
+.contact input{
+    width:80% ;
+}
+
+.contact input:first-child{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.contact textarea{
+    width:80% ;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.contact .contacttext{
+    padding:1% ;
+}
+
+.contact .contactbtn{
+    border-radius: 1rem;
+    padding:1% ;
+    margin-top: 1%;
+    width: 40%;
+    cursor: pointer;
+}
+
+.contact .contactbtn:hover{
+    background-color: rgb(60, 59, 61);
+    border: 2px solid white;
+    color: white;
+}
+
+/* #endregion */
+
+/* #region main-index */
+
+main{
+    background-color: #edebea;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 60vh);
+    grid-template-areas: 
+    "imgOne imgOne textOne textOne textOne"
+    "textTwo textTwo textTwo imgTwo imgTwo"
+    "imgThree imgThree textThree textThree textThree";
+}
+
+.prague{
+    grid-area: textOne;
+    border-bottom: 3px solid rgb(60, 59, 61) ;
+    
+    
+}
+
+.pragueimg{
+    grid-area: imgOne;
+    background-image: url(img/praguetwo.jpg);
+    background-size: cover;
+    background-position-x: 100%;
+    border-bottom: 3px solid rgb(60, 59, 61) ;
+}
+
+.amsterdam{
+    grid-area: textTwo;
+    border-bottom: 3px solid rgb(60, 59, 61) ;
+}
+
+.amsterdamimg{
+    grid-area: imgTwo;
+    background-image: url(img/amsterdam.jpg);
+    background-size: cover;
+    background-position-x: 0%;
+    border-bottom: 3px solid rgb(60, 59, 61) ;
+}
+
+.malaga{
+    grid-area: textThree;
+}
+
+.malagaimg{
+    grid-area: imgThree;
+    background-image: url(img/malaga.jpg);
+    background-size: cover;
+    background-position-x: 100%;
+}
+
+
+.prague h3, .malaga h3, .amsterdam h3{
+    display: flex;
+    flex-direction: column;
+    font-size: 300%;
+    color: rgb(6, 171, 236);
+    text-shadow:2px 1px 4px rgb(131, 131, 131) ;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+
+.praguedetails, .malagadetails, .amsterdamdetails {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 40%;
+    background-color: rgb(6, 171, 236) ;
+    width: 15vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow:2px 1px 4px rgb(131, 131, 131) ;
+    color:#edebea;
+    cursor: pointer;
+}
+
+.praguedetails a{
+    text-decoration: none;
+    color: white;
+}
+
+.praguedetails a:hover{
+    color: rgb(6, 171, 236)  ;
+}
+
+.praguedetails:hover, .amsterdamdetails:hover{
+    background-color:#edebea ;
+    color:  rgb(6, 171, 236);
+    border: 2px solid  rgb(6, 171, 236);
+}
+
+.malaga h3 {
+    color: rgb(235, 29, 29);
+}
+
+.amsterdam h3{
+    color: orange;
+}
+
+.malagadetails{
+    background-color: rgb(235, 29, 29) ;
+}
+
+.malagadetails a{
+    text-decoration: none;
+    color: white;
+}
+
+.malagadetails:hover{
+    background-color:#edebea ;
+    color:  rgb(235, 29, 29);
+    border: 2px solid  rgb(235, 29, 29);
+}
+
+.malagadetails a:hover{
+    color: rgb(235, 29, 29);
+}
+
+.amsterdamdetails {
+    background-color: orange;
+}
+
+.amsterdamdetails a{
+    text-decoration: none;
+    color: white;
+}
+
+.amsterdamdetails:hover{
+    background-color:#edebea ;
+    color:   orange;
+    border: 2px solid   orange;
+}
+
+.amsterdamdetails a:hover{
+    color: orange;
+}
+
+/* #endregion */
+
+/* #region praguesite */
+
+.headerpicprague{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url(img/pragueheader.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.praguespan{
+    color:  rgb(6, 171, 236) ;
+}
+
+.castle{
+    display: flex;
+    border-bottom: 5px dotted rgb(6, 171, 236);
+}
+
+.castleText {
+    margin: 1% 4% 1% 4%;
+    text-align: center;
+}
+
+.castleImg img {
+    border: 2px solid rgb(6, 171, 236);
+    border-radius: 50%;
+}
+
+.castleText h3{
+    font-size: 180%;
+    text-decoration: underline 2px rgb(6, 171, 236);
+    text-shadow: 1px 1px 2px rgb(6, 171, 236);
+    margin-bottom: 1%;
+}
+
+.bridge{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2%;
+    border-bottom: 5px dotted rgb(6, 171, 236);
+}
+
+.bridgeText {
+    margin: 1% 4% 1% 4%;
+    text-align: center;
+}
+
+.bridgeImg img {
+    border: 2px solid rgb(6, 171, 236);
+    border-radius: 50%;
+}
+
+.bridgeText h3{
+    font-size: 180%;
+    text-decoration: underline 2px rgb(6, 171, 236);
+    text-shadow: 1px 1px 2px rgb(6, 171, 236);
+    margin-bottom: 1%;
+}
+
+.oldTown{
+    display: flex;
+    margin-top: 2%;
+}
+
+.oldText {
+    margin: 1% 4% 1% 4%;
+    text-align: center;
+}
+
+.oldImg img {
+    border: 2px solid rgb(6, 171, 236);
+    border-radius: 50%;
+}
+
+.oldText h3{
+    font-size: 180%;
+    text-decoration: underline 2px rgb(6, 171, 236);
+    text-shadow: 1px 1px 2px rgb(6, 171, 236);
+    margin-bottom: 1%;
+}
+
+
+/* #endregion */
+
+/* #region malagasite */
+
+.headerpicmalaga{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url(img/malagabg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.malagaspan{
+    color:rgb(235, 29, 29);
+}
+
+.picasso{
+    display: flex;
+    border-bottom: 5px dotted rgb(235, 29, 29);
+}
+
+.picText {
+    margin: 1% 4% 1% 4%;
+    text-align: center;
+}
+
+.picImg img {
+    border: 2px solid rgb(235, 29, 29);
+    border-radius: 50%;
+}
+
+.picText h3{
+    font-size: 180%;
+    text-decoration: underline 2px rgb(235, 29, 29);
+    text-shadow: 1px 1px 2px rgb(235, 29, 29);
+    margin-bottom: 1%;
+}
+
+.alcazaba{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2%;
+    border-bottom: 5px dotted rgb(235, 29, 29);
+}
+
+.alcaText {
+    margin: 1% 4% 1% 4%;
+    text-align: center;
+}
+
+.alcaImg img {
+    border: 2px solid rgb(235, 29, 29);
+    border-radius: 50%;
+}
+
+.alcaText h3{
+    font-size: 180%;
+    text-decoration: underline 2px rgb(235, 29, 29);
+    text-shadow: 1px 1px 2px rgb(235, 29, 29);
+    margin-bottom: 1%;
+}
+
+.gibralFaro{
+    display: flex;
+    margin-top: 2%;
+}
+
+.gibText {
+    margin: 1% 4% 1% 4%;
+    text-align: center;
+}
+
+.gibImg img {
+    border: 2px solid rgb(235, 29, 29);
+    border-radius: 50%;
+}
+
+.gibText h3{
+    font-size: 180%;
+    text-decoration: underline 2px rgb(235, 29, 29);
+    text-shadow: 1px 1px 2px rgb(235, 29, 29);
+    margin-bottom: 1%;
+}
+
+/* #endregion */
+
+/* #region amsterdamsite */
+
+.headerpicamsterdam{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url(img/amsterdambg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.amsterdamspan{
+    color: orange;
+}
+
+.park{
+    display: flex;
+    border-bottom: 5px dotted orange;
+}
+
+.parkText {
+    margin: 1% 4% 1% 4%;
+    text-align: center;
+}
+
+.parkImg img {
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+
+.parkText h3{
+    font-size: 180%;
+    text-decoration: underline 2px orange;
+    text-shadow: 1px 1px 2px orange;
+    margin-bottom: 1%;
+}
+
+.vanGogh{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2%;
+    border-bottom: 5px dotted orange;
+}
+
+.vanText {
+    margin: 1% 4% 1% 4%;
+    text-align: center;
+}
+
+.vanImg img {
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+
+.vanText h3{
+    font-size: 180%;
+    text-decoration: underline 2px orange;
+    text-shadow: 1px 1px 2px orange;
+    margin-bottom: 1%;
+}
+
+.redLight{
+    display: flex;
+    margin-top: 2%;
+}
+
+.redText {
+    margin: 1% 4% 1% 4%;
+    text-align: center;
+}
+
+.redImg img {
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+
+.redText h3{
+    font-size: 180%;
+    text-decoration: underline 2px orange;
+    text-shadow: 1px 1px 2px orange;
+    margin-bottom: 1%;
+}
+
+/* #endregion */
+
+@media only screen and (max-width: 960px) {
+    nav ul {
+      display: block;
+    }
+    nav ul li{
+        padding-top: 1%;
+    }
+
+    nav p{
+        display: none;
+    }
+
+    footer{
+        display: block;
+    }
+    
+    .socialmedia{
+        margin-top: 2%;
+        border: none;
+    }
+
+    .contact{
+        margin-top: 2%;
+    }
+
+    .wrapper{
+        display: block;
+    }
+
+    .prague{
+        background-image: url(img/prague.jpg);
+        background-size: 50%;
+    }
+
+    .amsterdam{
+        background-image: url(img/amsterdambg.jpg);
+        background-size: 50%;
+    }
+
+    .malaga{
+        background-image: url(img/malagabg.jpeg);
+        background-size: 50%; 
+    }
+
+    .park, .vanGogh, .redLight, .picasso, .gibralFaro, .alcazaba, .castle, .bridge, .oldTown{
+        flex-direction: column-reverse;
+    }
+   
+    
+    .parkImg img, .redImg img, .vanImg img, .alcaImg img, .picImg img, .gibImg img, .bridgeImg img, .oldImg img, .castleImg img{
+        width: 100%;
+    }
+  }
